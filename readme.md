@@ -11,6 +11,15 @@ You can make requests to the following endpoints:
 ## Update Item/receipt/ (PUT): http://localhost:3030/data/catalog/:id
 ## Delete Item/receipt/ (DELETE): http://localhost:3030/data/catalog/:id
 ## My Items/receipts/ (GET): http://localhost:3030/data/catalog?where=_ownerId%3D%22{userId}%22
+To use for example:
+{
+    "title":"Яйца на очи",
+    "ingredients":"яйца - 4 броя, олио - 4 с.л. сол, черен пипер,магданоз - ситно накълцан или сух, за поръсване",
+    "time":"15",
+    "description":"Загрейте мазнината в тиган с незалепващо покритие. Бързо чуквайте яйцата и ги пускайте от ниско. Посолете, поръсете с малко черен пипер и похлупете за капак, за да се задушат.Щом жълтъците леко се втвърдят, са готови. Махнете от котлона, разпределете яйцата в 2 чинии и ги поръсете с магданоз и чубрица по желание.",
+    "img":"https://recepti.gotvach.bg/files/lib/600x350/qicaochi.webp",
+    "_ownerId":"64b96ac2eaa068ef4c714a4f"
+}
 
 #Requirements to the client:
 ##Register User

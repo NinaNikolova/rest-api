@@ -7,7 +7,7 @@ const dataController = require('./controllers/dataController');
 const trimBody = require('./middlewares/trimBody');
 const session = require('./middlewares/session');
 
-
+// TODO: change db
 const connectionString = 'mongodb://127.0.0.1:27017/receipts';
 
 start();

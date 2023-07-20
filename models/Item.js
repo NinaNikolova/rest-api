@@ -6,7 +6,7 @@ const itemSchema = new Schema({
     ingredients: { type: String, required: true, minlength: [3, 'Model must be at least 3 characters long'] },
     time: {
         type: Number, required: true, validate: {
-            validator: value => value >= 0 && value <= 24,
+            validator: value => value >= 0 && value <= 300,
             message: 'Year must be between 0 and 24'
         }
     },
