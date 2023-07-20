@@ -32,12 +32,12 @@ Create Item/Receipt/
 
 ##Validate fields:
 
-### Title - must be at least 2 symbols long
-### Ingredients - array
-### Time- must be a positive number
-### Description -must be more than 10 symbols
-### Img is required
-### UserId
+### title - must be at least 2 symbols long
+### ingredients - string
+### time- must be a positive number
+### description -must be more than 10 symbols
+### img is required
+### _ownerId
 ### createdAt
 
 By valid input, you can add the "is-valid" class to the input field, and by invalidating the "is-invalid" class.
