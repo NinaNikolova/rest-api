@@ -27,7 +27,7 @@ authController.post('/register',
 authController.post('/login', async (req, res) => {
     try {
         const token = await login(req.body.email, req.body.password);
-        res.json(token);
+            res.json(token);
     } catch (error) {
         const message = parseError(error);
         res.status(401).json({ message });

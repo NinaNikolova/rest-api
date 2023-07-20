@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken');
 const User = require('../models/User');
 
 
-const secret = 'q-90234xcwmietvuselrg';
+const secret = 'q-90234xcwmietvHHHHHHselrg';
 
 const tokenBlacklist = new Set();
 
@@ -34,7 +34,9 @@ async function login(email, password) {
     }
 
     return createToken(user);
+
 }
+
 
 async function logout(token) {
     tokenBlacklist.add(token);
@@ -53,6 +55,7 @@ function createToken(user) {
         username: user.username,
         accessToken: jwt.sign(payload, secret)
     };
+ 
 }
 
 function parseToken(token) {
